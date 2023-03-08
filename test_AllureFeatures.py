@@ -88,3 +88,12 @@ class TestAllureFeatures:
     @allure.severity(allure.severity_level.NORMAL)
     def test_with_normal_severity(self):
         pass
+
+    @pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
+    def test_xfail_expected_failure(self):
+        """this test is an xfail that will be marked as expected failure"""
+        assert False
+
+    @allure.link('https://jira.verizon.com/browse/MECQAA-1329', name='Click me')
+    def test_with_named_link(self):
+        pass

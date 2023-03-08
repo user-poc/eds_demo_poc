@@ -19,3 +19,7 @@ class TestBasicOperation:
     def test_div(self):
         print("Function to do division")
         assert 'a' != 'a', "a is not as expected"
+
+    def test_mod(self):
+        print("Function to do mod")
+        assert 'a' == 'a', "a is not as expected"

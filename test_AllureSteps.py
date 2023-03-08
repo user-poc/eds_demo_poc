@@ -28,3 +28,6 @@ class TestAllureSteps:
         self.passing_step()
         self.passing_step_2()
         self.step_with_nested_steps()
+
+    def test_with_single_step(self):
+        self.passing_step()
